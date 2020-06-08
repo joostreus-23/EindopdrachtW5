@@ -1,0 +1,21 @@
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.grocerylist li {
+  background-color: aqua;
+}
+
+.grocerylist li:nth-child(odd) {
+  background-color: rebeccapurple;
+}
+
+.shoppingcart li {
+  background-color: rgb(108, 207, 161);
+}
+
+.shoppingcart li:nth-child(odd) {
+  background-color: rgb(202, 177, 226);
+}
