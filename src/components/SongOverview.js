@@ -1,9 +1,10 @@
 import React from "react";
 import InputField from "./SongOverview/InputField";
 import SongList from "./SongOverview/SongList";
-import Header from "./Header";
 import GenreFilter from "./SongOverview/Filters/GenreFilter";
 import RatingFilter from "./SongOverview/Filters/RatingFilter";
+import ResetFilter from "./SongOverview/Filters/ResetFilter";
+
 class SongOverview extends React.Component {
   constructor() {
     super();
@@ -31,6 +32,22 @@ class SongOverview extends React.Component {
           title: "Money Trees",
           genre: "hip-hop",
           rating: "★★★★★",
+          display: true,
+        },
+        {
+          id: 4,
+          artist: "Rufus du Sol",
+          title: "Brighter",
+          genre: "house",
+          rating: "★★★★",
+          display: true,
+        },
+        {
+          id: 5,
+          artist: "Amelie Lens",
+          title: "Purge",
+          genre: "techno",
+          rating: "★★★★",
           display: true,
         },
       ],
@@ -115,10 +132,11 @@ class SongOverview extends React.Component {
     };
 
     return (
-      <div>
+      <div className="content">
         <InputField addSong={addSong} />
-        <GenreFilter genreFilter={genreFilter} resetFilter={resetFilter} />
+        <GenreFilter genreFilter={genreFilter} />
         <RatingFilter ratingFilter={ratingFilter} />
+        <ResetFilter resetFilter={resetFilter} />
         <SongList songs={this.state.songs} deleteSong={deleteSong} />
       </div>
     );

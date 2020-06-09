@@ -5,7 +5,7 @@ function NavBar() {
     color: "white",
   };
   return (
-    <nav className="navbar">
+    <nav className="nav">
       <ul className="nav-items">
         <Link to="/" style={navstyle}>
           <li>Home</li>

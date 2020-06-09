@@ -2,8 +2,8 @@ import React from "react";
 
 function GenreFilter(props) {
   return (
-    <div>
-      <label>Filter hier op genre</label>
+    <div className="filters">
+      <label>Filter hier op genre: </label>
       <select
         name="genre"
         id="genrefilter"
@@ -17,11 +17,6 @@ function GenreFilter(props) {
         <option value="house">house</option>
         <option value="techno">techno</option>
       </select>
-      <input
-        type="submit"
-        value="Reset filters"
-        onClick={(event) => props.resetFilter()}
-      ></input>
     </div>
   );
 }

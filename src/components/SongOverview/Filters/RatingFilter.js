@@ -2,8 +2,8 @@ import React from "react";
 
 function RatingFilter(props) {
   return (
-    <div>
-      <label>Filter hier op rating</label>
+    <div className="filters">
+      <label>Filter hier op rating: </label>
       <select
         name="rating"
         id="rating-filter"

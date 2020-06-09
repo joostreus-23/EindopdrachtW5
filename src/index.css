@@ -1,16 +1,26 @@
 body {
-  background-color: whitesmoke;
-  margin: 10px;
+  background-color: rgb(36, 35, 35);
+  margin: 5%;
   padding: 0;
+  color: cornsilk;
 }
 
-nav {
+.header {
+  grid-area: header;
+  grid-area: nav;
+  justify-content: space-around;
+  text-align: center;
+  min-height: 20px;
+  color: bisque;
+}
+
+.nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: burlywood;
-  min-height: 20px;
+  height: 30%;
   list-style-type: none;
+  background-color: grey;
 }
 
 .nav-items {
@@ -19,4 +29,38 @@ nav {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+.additems {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+}
+
+.filters {
+  margin: 20px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+
+.content {
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabel {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.song-header {
+  border-bottom: 2px solid beige;
+  font-size: large;
+  background-color: darkgray;
 }
