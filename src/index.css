@@ -4,6 +4,19 @@ body {
   padding: 0;
 }
 
-.song-row {
-  border: 1px solid black;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: burlywood;
+  min-height: 20px;
+  list-style-type: none;
+}
+
+.nav-items {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }

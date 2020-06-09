@@ -1,9 +1,9 @@
 import React from "react";
-import InputField from "./InputField";
-import SongList from "./SongList";
+import InputField from "./SongOverview/InputField";
+import SongList from "./SongOverview/SongList";
 import Header from "./Header";
-import GenreFilter from "./GenreFilter";
-import RatingFilter from "./RatingFilter";
+import GenreFilter from "./SongOverview/Filters/GenreFilter";
+import RatingFilter from "./SongOverview/Filters/RatingFilter";
 class SongOverview extends React.Component {
   constructor() {
     super();
@@ -116,8 +116,6 @@ class SongOverview extends React.Component {
 
     return (
       <div>
-        <Header />
-
         <InputField addSong={addSong} />
         <GenreFilter genreFilter={genreFilter} resetFilter={resetFilter} />
         <RatingFilter ratingFilter={ratingFilter} />

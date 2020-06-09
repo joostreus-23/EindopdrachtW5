@@ -20,10 +20,10 @@ function Header() {
   }
 
   return (
-    <div className="header">
+    <header className="header">
       <h1 style={styles}>Good {timeOfDay}!</h1>
       <h1>Welkom bij de Amazing playlistmaker</h1>
-    </div>
+    </header>
   );
 }
 
