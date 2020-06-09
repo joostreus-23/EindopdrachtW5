@@ -9,21 +9,18 @@ function Header() {
   };
 
   if (hours < 12) {
-    timeOfDay = "morning";
-    styles.color = "#04756F";
+    timeOfDay = "morgen";
   } else if (hours >= 12 && hours < 17) {
-    timeOfDay = "afternoon";
-    styles.color = "#8914A3";
+    timeOfDay = "middag";
   } else {
-    timeOfDay = "night";
-    styles.color = "#D90000";
+    timeOfDay = "avond";
   }
 
   return (
-    <div className="header">
-      <h1 style={styles}>Good {timeOfDay}!</h1>
+    <header className="header">
+      <h1>Goeden{timeOfDay}!</h1>
       <h1>Welkom bij de Amazing playlistmaker</h1>
-    </div>
+    </header>
   );
 }
 

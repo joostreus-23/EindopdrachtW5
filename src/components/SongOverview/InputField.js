@@ -1,10 +1,11 @@
 import React from "react";
 
 function InputField(props) {
+  const style = { margin: 5 };
   return (
-    <div>
+    <div className="additems">
       <input type="text" id="input-artist" placeholder="Artist"></input>
-      <input type="text" id="input-title" placeholder="Title"></input>
+      <input type="text" id="input-title" placeholder="Song"></input>
       <select name="genre" id="genre">
         <option value="top-40">top-40</option>
         <option value="hip-hop">hip-hop</option>
@@ -25,7 +26,7 @@ function InputField(props) {
       </select>
       <input
         type="submit"
-        value="add"
+        value="Add Song to Playlist"
         onClick={(event) => props.addSong(event)}
       ></input>
     </div>

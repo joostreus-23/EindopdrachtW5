@@ -20,18 +20,23 @@ class SongList extends React.Component {
       />
     ));
     return (
-      <table width="80%">
-        <thead>
-          <tr className="song-header" width="600">
-            <th className="song-row__item">Artist</th>
-            <th className="song-row__item">Song</th>
-            <th className="song-row__item">Genre</th>
-            <th className="song-row__item">Rating</th>
-            <th className="song-row__item">Delete</th>
+      <div className="tabel">
+        <table width="80%">
+          <thead>
+            <tr className="song-header" width="600">
+              <th className="song-row__item">Artist</th>
+              <th className="song-row__item">Song</th>
+              <th className="song-row__item">Genre</th>
+              <th className="song-row__item">Rating</th>
+              <th className="song-row__item">Delete</th>
+            </tr>
+          </thead>
+          <tr>
+            <br />
           </tr>
-        </thead>
-        <tbody>{showItems}</tbody>
-      </table>
+          <tbody>{showItems}</tbody>
+        </table>
+      </div>
     );
   }
 }
