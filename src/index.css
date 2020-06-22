@@ -34,29 +34,25 @@ body {
   margin: 20px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  height: 30%;
 }
 
 .filters {
   margin: 20px;
   display: block;
-  justify-content: center;
-  align-items: center;
   height: 30%;
 }
 
 .content {
-  margin: 20px;
-  justify-content: center;
-  align-items: center;
+  margin: 20px auto;
 }
 
 .tabel {
-  text-align: center;
+  display: flex;
+
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  text-align: center;
+
+  margin: 20px auto;
 }
 
 .song-header {
